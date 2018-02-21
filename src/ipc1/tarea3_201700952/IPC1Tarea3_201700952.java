@@ -94,8 +94,57 @@ public class IPC1Tarea3_201700952 {
                     }while(respuesta !=0);
                     break;
                 case 3:
+                    do{
+                        System.out.println("TRES NUMEROS DE MAYOR A MENOR");
+                        System.out.println("1] Ingresar numeros");
+                        System.out.println("2] Mostrar ordenados");
+                        System.out.println("0] Menu principal\n");
+                        System.out.println("Ingrese una opcion\n");
+                        
+                        respuesta = leer.nextInt();
+                        try{
+                            switch(respuesta){
+                                case 0:
+                                    break;
+                                case 1:
+                                    System.out.println("Ingres los numeros\n");
+                                    break;
+                                case 2:
+                                    System.out.println("Mostrar en orden los números\n");
+                                    break;
+                                default:
+                                    System.out.println("Ingrese una opcion correcta\n");
+                            }
+                        }catch(Exception e){
+                        System.out.println("Ingrese una opcion correcta");
+                        leer.next();
+                        }
+                    }while(respuesta !=0);
+                    
                     break;
                 case 4:
+                    do{
+                        System.out.println("PROMEDIO DE NOTAS(4 NOTAS 6 ESTUDIANTES)");
+                        System.out.println("1] Ingresar NOTAS");
+                        System.out.println("0] Menu principal\n");
+                        System.out.println("Ingrese una opcion\n");
+                        
+                        respuesta = leer.nextInt();
+                        try{
+                            switch(respuesta){
+                                case 0:
+                                    break;
+                                case 1:
+                                    System.out.println("Ingres las notas\n");
+                                    break;
+                                default:
+                                    System.out.println("Ingrese una opcion correcta\n");
+                            }
+                        }catch(Exception e){
+                        System.out.println("Ingrese una opcion correcta");
+                        leer.next();
+                        }
+                    }while(respuesta !=0);
                     break;
                 default:
                     break;
