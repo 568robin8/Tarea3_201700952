@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package ipc1.tarea3_201700952;
+
 import java.util.Scanner;
 import java.util.InputMismatchException;
 /**
@@ -12,12 +13,15 @@ import java.util.InputMismatchException;
  */
 public class IPC1Tarea3_201700952 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-         Scanner leer = new Scanner(System.in);
+   
+    
+    public static void main(String[] args) {   
+        Scanner leer = new Scanner(System.in);
         int respuesta;
+        int numero1;
+        int a;
+        int b;
+        
         do{
         System.out.println("MENU PRINCIPAL");
         System.out.println("1] Usuarios");
@@ -79,10 +83,13 @@ public class IPC1Tarea3_201700952 {
                                     break;
                                 case 1:
                                     System.out.println("Ingres un numero\n");
+                                    numero1 = leer.nextInt();
                                     break;
                                 case 2:
                                     System.out.println("Mostrar el número de "
                                             + "digitos del numero ingresado\n");
+                                    System.out.println("EL NUMERO " + numero1 + " tiene " 
+                                            + Integer.toString(numero1).length()+" digitos\n ");
                                     break;
                                 default:
                                     System.out.println("Ingrese una opcion correcta\n");
