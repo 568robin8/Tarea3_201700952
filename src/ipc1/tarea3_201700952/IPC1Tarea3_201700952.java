@@ -81,10 +81,14 @@ public class IPC1Tarea3_201700952 {
                             switch(respuesta){
                                 case 0:
                                     break;
+                                //Cuando el usuario ingresa en "case 1" ingresa un numero el cual
+                                //va a contar los digitos que dicho numero tiene.
                                 case 1:
                                     System.out.println("Ingres un numero\n");
                                     numero1 = leer.nextInt();
                                     break;
+                                //Pero cuando regresa al menu y el usuario entra en "case 2"
+                                //el valor que ingreso el usuario se pierde, y "numero 1" no me lo reconoce.
                                 case 2:
                                     System.out.println("Mostrar el número de "
                                             + "digitos del numero ingresado\n");
