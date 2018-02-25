@@ -18,7 +18,7 @@ public class IPC1Tarea3_201700952 {
     public static void main(String[] args) {   
         Scanner leer = new Scanner(System.in);
         int respuesta;
-        int numero1;
+        int numero1=0;
         int a;
         int b;
         
